@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="utf-8"/>
+  <meta name="author" content="Tamiris de Melo Herrera 1960849"/>
+  <meta name="description" content="Projeto Final"/>
+  <meta name="keywords" content="Html,css"/>
+  <meta name="generator" content="notepad++"/>
+  <link rel="stylesheet" type="text/css" href="css/styles.css"/>
+  <link rel="shortcut icon" href="img/icon.png" type="image/x-icon" />
+  <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great|Love+Ya+Like+A+Sister|Satisfy&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div id="titulo">
+    <h1>Objective-C</h1>
+  </div>
+    <div class="menu">
+      <ul>
+          <li><a href="index.html">Home</li>
+          <li><a>Turismo Sustentável</a>
+              <ul>
+                  <li><a href="turismo1.html">O que é Turismo Sustentável</a></li>
+                  <li><a href="turismo.html">Como Praticar</a></li>
+                  <li><a href="turismo2.html">Turismo Sustentável e Ecoturismo</a></li>
+              </ul>
+          </li>         
+          <li><a>Objective-C</a>
+              <ul>
+                  <li><a href="objective.html">O que é Objective-C</a></li>
+                  <li><a href="objective2.html">Primeiro programa</a></li>
+                  <li><a href="objective3.html">Objective-C e Swift</a></li>
+              </ul>                
+          </li>
+          <li><a href="referencias.html">Referências</a></li>
+      </ul>
+  </div>
+
+<div class="container_obj2"> 
+  <div class="main_obj2">
+    <img src="img/hello.png" id="hello_w">
+    <p>O Objective C foi construído sobre a linguagem C, constituindo-se como um super-conjunto de C, sendo possível compilar qualquer programa C em um compilador de Objective C. A maior parte da sua sintaxe de deriva de C, enquanto os aspectos de orientação a objetos foram inspirados no estilo de passagens de mensagens do Smalltalk. Quem já tem experiência com C ou C++ vai verificar algumas características parecidas, mais ao aprofundar o estudo da linguagem podemos ver que ela tem muitas particularidades.</p>
+
+    <h4>Primeiro Programa em Objective C:</h4>
+    <div><img src="img/hello_word.png" id="img_classes" alt="codigo" title="codigo"></div>
+    <p>Saida: hello world</p>
+    <p>Características: </p>
+    <ul>
+      <li id="topicos">Usa-se #import em vez de #include em Objective-C;</li><br/>
+      <li id="topicos">A extensão de arquivo padrão para Objective-C é .M;</li><br/>
+      <li id="topicos">Comentários: “//” ou “/* */”</li><br/>
+    </ul>
+
+    <h4>Criando Classes :</h4>
+    <p>Ao definir uma nova classe dizemos ao compilador algumas coisas: Primeiro descriminamos a origem da classe, ou seja quem é a sua superclasse, utilizando para isso a descrição “@interface”, cujo o formato mais comum é:</p>
+    <div><img src="img/classes.png" id="img_classes" alt="codigo" title="codigo"></div>
+    <p>Pra declararmos um método é preciso apenas definirmos o seu nome e acompanha-lo com seu código entre chaves “{}”.</p>
+
+    <p>E após a declaração dos métodos podemos colocar o programa para rodar na rotina do método main que indica onde o programa deve iniciar sua execução, como vimos o exemplo do “hello world”. Lembrando que o método main deve sempre retornar um numero inteiro ao sistema para especificar que está terminando a sua execução.</p>
+    <h4>Ambiente de Programação</h4>
+
+    <p>Como em toda linguagem de programação moderna é preciso de um editor e um compilador. Muitos SOs da Apple já vem com eles inclusos gratuitamente no sistema, se não estiverem instalados no MacOS X, é preciso instalar os “Developer Tolls” gratuitos disponibilizados pela Apple. O “Develloper Tolls” dispõe do compilador gcc e um ambiente de programação muito eficiente próprio, o Xcode.</p>
+
+<p>Para compilar programas no Mac OS utilizando o Xcode, é preciso criar um novo projeto do tipo “Cocoa Aplication” e sobrescrever o método main que é criado automaticamente.</p>
+
+<p>No Linux é preciso instalar o GCC se não já tiver, e utilizar algum editor de texto nativo do Linus como o vi, pico, emacs e etc… Ou você pode instalar algum ambiente de programação próprio como o KDevelop ou as ferramentas GNUStep.</p>
+
+<p>Se quiser utilizar o Objective c no Windows é preciso instalar o compilador que acompanha o sistema MinGW ou o compilador Cygwin. E para escrever os códigos só é usar qualquer editor de texto, au algum abiente de programação e salvar o código com a extensão “.m”.
+Para compilar o programa escrito em Objective , tanto no Mac OS, Linux ou Windows, usando a linha de comando é preciso utilizar o gcc, cujo o formato de de chamada é:</p>
+<div><img src="img/codigo.png" id="img_classes" alt="codigo" title="codigo"></div>
+<p>Detalhando:</p>
+<p> <ul>
+      <li id="topicos">gcc: Indica que usaremos o compilador gcc; </li><br/>
+      <li id="topicos">arquivos.m: nome do arquivo do programa;</li><br/>
+      <li id="topicos">-o : vem de output, indica qual nome o arquivo executável vai ter;</li><br/>
+      <li id="topicos">-l objc: O -l vem de library (biblioteca) -lobjc indica que usaremos as bibliotecas do objective-c para compilar o nosso programa.</li><br/>
+    </ul></p>
+    <br/>
+
+   <h4> Relacão com a disciplina de Compiladores</h4>
+<p>No que diz respeito a linguagem , Objective C, trata-se de uma sub-linguagem da linguagem C além de elementos da linguagem Smalltalk, por ser hibrida de duas linguagem com paradigmas diferentes é difícil de ser classificada.</p>
+
+<p>Estes podem, inicialmente, parecem estar em conflito estilos de programação, mas na prática há uma separação clara entre os dois. A linguagem do núcleo C é utilizada para codificar o fluxo de controle de um programa e o Smalltalk usada para definir e trabalhar com tipos de dados abstratos. O resultado é que o programa escrito tem os benefícios de flexibilidade do Smalltalk e a velocidade de velocidade de execução do C.</p>
+
+<p>A linguagem foi escrita especificamente pra trabalhar com o MacOS e adaptada para Linux e posteriormente podendo ser rodada no Windows mais sem todas as funcionalidades, tudo isso graças a arquitetura dos compiladores Front-end e Back-end, que facilita essa transição de plataforma.</p>
+
+<div><img src="img/program.gif" id="program"></div>
+
+  </div>
+  <div id="top"><a href="#titulo"><img src="img/top.png"  title="topo" width="30px" height="30px"></a></div>
+</div>
+
+<footer>
+  <div id="rodape"><p>&copy;2019 - Tamiris De Melo Herrera Prontuário : 196084-9</p></div>
+</footer>
+
+</body>
+</html>
